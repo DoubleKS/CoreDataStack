@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHy-Bv-eBc">
+                                <rect key="frame" x="156" y="152" width="62" height="30"/>
+                                <state key="normal" title="增加数据"/>
+                                <connections>
+                                    <action selector="insertButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nZO-KU-MOS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NG-gY-N3y">
+                                <rect key="frame" x="156" y="298" width="62" height="30"/>
+                                <state key="normal" title="修改数据"/>
+                                <connections>
+                                    <action selector="updateButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8HI-Xc-WEK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1V-sB-FbU">
+                                <rect key="frame" x="156" y="228" width="62" height="30"/>
+                                <state key="normal" title="删除数据"/>
+                                <connections>
+                                    <action selector="deletBuutonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnE-Bl-T59"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kN-fg-VBK">
+                                <rect key="frame" x="156" y="368" width="62" height="30"/>
+                                <state key="normal" title="查询数据"/>
+                                <connections>
+                                    <action selector="fetchButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tr9-VX-y8c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z1V-sB-FbU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HSF-X8-d93"/>
+                            <constraint firstItem="8NG-gY-N3y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iwm-2Y-Vb0"/>
+                            <constraint firstItem="3kN-fg-VBK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nro-lW-mSI"/>
+                            <constraint firstItem="JHy-Bv-eBc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PMN-kt-b8f"/>
+                            <constraint firstItem="Z1V-sB-FbU" firstAttribute="top" secondItem="JHy-Bv-eBc" secondAttribute="bottom" constant="46" id="UAc-h8-Y6H"/>
+                            <constraint firstItem="JHy-Bv-eBc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aAE-nA-E9l"/>
+                            <constraint firstItem="JHy-Bv-eBc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="gSo-DM-S8W"/>
+                            <constraint firstItem="3kN-fg-VBK" firstAttribute="top" secondItem="8NG-gY-N3y" secondAttribute="bottom" constant="40" id="iqV-ih-gbN"/>
+                            <constraint firstItem="8NG-gY-N3y" firstAttribute="top" secondItem="Z1V-sB-FbU" secondAttribute="bottom" constant="40" id="jbw-bP-gyz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
